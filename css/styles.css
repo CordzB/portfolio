@@ -364,3 +364,27 @@ body {
 .footer {
   background: rgba(2, 6, 23, 0.95);
 }
+/* =====================================================
+   AJUSTE RESPONSIVE DEL NOMBRE EN NAVBAR (MÓVIL)
+   ===================================================== */
+
+.nav-logo {
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  .nav-logo {
+    max-width: 100%;
+    font-size: 1rem;          /* Reduce un poco el tamaño */
+    white-space: normal;      /* PERMITE SALTO DE LÍNEA */
+    word-break: break-word;   /* Evita desbordes */
+    text-align: center;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+}
