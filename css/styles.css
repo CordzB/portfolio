@@ -1,0 +1,366 @@
+/* =====================================================
+   CONFIGURACIÓN GLOBAL
+   ===================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset + fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =====================================================
+   BODY – TAMAÑO DE TEXTO GLOBAL
+   Aumentamos legibilidad en toda la página
+   ===================================================== */
+body {
+  font-size: 16.5px;        /* ⬅ TEXTO GLOBAL MÁS GRANDE */
+  line-height: 1.75;        /* ⬅ MEJOR LECTURA */
+  color: #e5e7eb;
+  background: #020617;
+}
+
+/* =====================================================
+   FONDO TECNOLÓGICO
+   ===================================================== */
+#tech-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: rgba(2,6,23,0.85);
+  backdrop-filter: blur(10px);
+}
+
+.nav-logo {
+  font-weight: 600;
+  font-size: 1.1rem;        /* ⬅ MÁS LEGIBLE */
+  color: #38bdf8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.95rem;       /* ⬅ AUMENTO */
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* =====================================================
+   HERO
+   ===================================================== */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero h1 {
+  font-size: 2.6rem;        /* ⬅ MÁS IMPACTO */
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.85;
+}
+
+.hero-impact {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.3rem;        /* ⬅ TEXTO CLAVE */
+  color: #e5e7eb;
+}
+
+.hero-sub {
+  max-width: 720px;
+  margin-top: 15px;
+  font-size: 1.05rem;       /* ⬅ MÁS LEGIBLE */
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+/* BOTÓN */
+.btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* =====================================================
+   SECCIONES GENERALES
+   ===================================================== */
+.section {
+  padding: 90px 10%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 2.2rem;        /* ⬅ SECCIONES MÁS GRANDES */
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+/* =====================================================
+   SOBRE MÍ – TEXTO EXTENSO
+   ===================================================== */
+#sobre-mi {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#sobre-mi p {
+  font-size: 1.10rem;       /* ⬅ TEXTO CLAVE MÁS GRANDE */
+  line-height: 2.0;
+  margin-bottom: 22px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #e5e7eb;
+}
+
+/* Animación */
+.fade-step {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-step.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =====================================================
+   TECNOLOGÍAS
+   ===================================================== */
+.tech-block {
+  margin-bottom: 40px;
+}
+
+.tech-block h3 {
+  margin-bottom: 15px;
+  color: #c7d2fe;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+}
+
+.tech-grid span {
+  background: rgba(30,41,59,0.7);
+  padding: 12px;
+  font-size: 0.95rem;       /* ⬅ MÁS LEGIBLE */
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-grid span::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, #38bdf855, transparent);
+  transform: translateX(-100%);
+}
+
+.tech-grid span:hover::after {
+  transform: translateX(100%);
+  transition: transform 0.6s;
+}
+
+/* =====================================================
+   CARDS (PROYECTOS / EXPERIENCIA)
+   ===================================================== */
+.card {
+  background: rgba(30,41,59,0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(56,189,248,0.15);
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+}
+
+.card p,
+.card li {
+  font-size: 1.02rem;       /* ⬅ MÁS CÓMODO */
+  line-height: 1.8;
+}
+
+.card a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.footer {
+  text-align: center;
+  padding: 60px 10%;
+  background: rgba(2,6,23,0.85);
+}
+
+.footer h2 {
+  font-size: 2rem;
+}
+
+.footer-icons {
+  margin: 20px 0;
+}
+
+.footer-icons a {
+  color: #38bdf8;
+  font-size: 24px;
+  margin: 0 12px;
+  transition: transform 0.3s;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* =====================================================
+   RESPONSIVE – MÓVIL
+   ===================================================== */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15.5px;      /* ⬅ AJUSTE MÓVIL */
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 12px 5%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 0 6%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-impact {
+    font-size: 1.1rem;
+  }
+
+  .hero-sub {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 60px 6%;
+  }
+
+  #sobre-mi p {
+    font-size: 1rem;
+    text-align: left;       /* ⬅ MEJOR LECTURA EN MÓVIL */
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .footer-icons a {
+    font-size: 22px;
+    margin: 0 10px;
+  }
+}
+/* =====================================================
+   AJUSTE FINO DE CONTRASTE
+   Mejora lectura sin perder estética oscura
+   ===================================================== */
+
+/* Texto general ligeramente más claro */
+body {
+  color: #f1f5f9; /* antes #e5e7eb */
+}
+
+/* Texto secundario (descripciones) */
+.hero-sub,
+.section p,
+.card p,
+.card li {
+  color: #e2e8f0;
+}
+
+/* Cards más separadas del fondo */
+.card {
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+/* Footer contraste */
+.footer {
+  background: rgba(2, 6, 23, 0.95);
+}
