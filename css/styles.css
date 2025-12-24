@@ -703,3 +703,91 @@ footer.show {
   opacity: 1;
   transform: translateY(0);
 }
+/* =====================================================
+   NAVBAR RESPONSIVE + HAMBURGUESA
+   ===================================================== */
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #38bdf8;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+/* Animación X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* =====================
+   MÓVIL
+   ===================== */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
+  }
+
+  .nav-links.active {
+    max-height: 400px;
+    opacity: 1;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* HERO MOBILE */
+  .hero {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .hero-content {
+    padding: 0 6%;
+  }
+
+  .hero-photo {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .hero-photo img {
+    width: 240px;
+    height: auto;
+  }
+}
