@@ -1,343 +1,460 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Carlos Ordoñez | Desarrollador Web y Soporte de TI</title>
+    <title>Carlos Ordoñez | Desarrollador Web y Soporte de TI</title>
 
-  <!-- SEO Básico -->
-  <meta name="description"
-    content="Portafolio profesional de Carlos Ordoñez, desarrollador web y especialista en soporte de TI. Experiencia en infraestructura, servidores, redes, electrónica y resolución rápida de problemas tecnológicos." />
+    <!-- SEO Básico -->
+    <meta
+      name="description"
+      content="Portafolio profesional de Carlos Ordoñez, desarrollador web y especialista en soporte de TI. Experiencia en infraestructura, servidores, redes, electrónica y resolución rápida de problemas tecnológicos."
+    />
 
-  <meta name="keywords"
-    content="Carlos Ordoñez, desarrollador web, soporte TI, infraestructura, redes, servidores, electrónica, JavaScript, Node.js, sistemas, IT support" />
+    <meta
+      name="keywords"
+      content="Carlos Ordoñez, desarrollador web, soporte TI, infraestructura, redes, servidores, electrónica, JavaScript, Node.js, sistemas, IT support"
+    />
 
-  <meta name="author" content="Carlos Ordoñez" />
+    <meta name="author" content="Carlos Ordoñez" />
 
-  <!-- SEO para redes sociales (LinkedIn / WhatsApp) -->
-  <meta property="og:title" content="Carlos Ordoñez | Desarrollador Web y Soporte de TI" />
-  <meta property="og:description"
-    content="Desarrollador web y especialista en soporte de TI con sólida experiencia en infraestructura, servidores, redes y sistemas críticos." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_ES" />
+    <!-- SEO para redes sociales (LinkedIn / WhatsApp) -->
+    <meta
+      property="og:title"
+      content="Carlos Ordoñez | Desarrollador Web y Soporte de TI"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollador web y especialista en soporte de TI con sólida experiencia en infraestructura, servidores, redes y sistemas críticos."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <!-- SEO Técnico -->
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tudominio.com/">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+<!-- Open Graph -->
+<meta property="og:title" content="Carlos Ordoñez | Desarrollador Web y Soporte TI">
+<meta property="og:description" content="Desarrollador Web y Especialista en Soporte de TI con experiencia en infraestructura, servidores, redes y aplicaciones modernas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tudominio.com/assets/img/carlos.jpeg">
+<!--<meta property="og:url" content="https://tudominio.com/">-->
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Carlos Ordoñez | Desarrollador Web y Soporte TI">
+<meta name="twitter:description" content="Portafolio profesional de desarrollo web y soporte de TI.">
+<!--<meta name="twitter:image" content="https://tudominio.com/assets/img/carlos.jpeg">-->
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
 
-<body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
     <!--Navbar-->
     <nav class="navbar">
-  <div class="nav-logo">Carlos Ordoñez| Desarrollador web | Soporte TI</div>
-  <ul class="nav-links">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#sobre-mi">Sobre mí</a></li>
-    <li><a href="#tecnologias">Tecnologías</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#experiencia">Experiencia</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
+      <div class="nav-logo">Carlos Ordoñez| Desarrollador web | Soporte TI</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
 
+    <!-- FONDO TECNOLÓGICO -->
+    <canvas id="tech-bg"></canvas>
 
-  <!-- FONDO TECNOLÓGICO -->
-  <canvas id="tech-bg"></canvas>
-
-  <!-- HERO -->
+    <!-- HERO -->
 <header class="hero" id="inicio">
-  <h1>¡ Hola !, Soy <span>Carlos Ordoñez</span></h1>
+  <div class="hero-content">
 
-  <h2 class="hero-impact">
-    Desarrollador Web y Especialista en Soporte de TI
-  </h2>
+    <!-- TEXTO -->
+    <div class="hero-text">
+      <h1>¡ Hola !, Soy <span>Carlos Ordoñez</span></h1>
 
-  <p class="hero-sub">
-    Transformo problemas técnicos complejos en soluciones estables, seguras y funcionales,
-    combinando infraestructura, software y experiencia en campo.
-  </p>
+      <h2 class="hero-impact">
+        Desarrollador Web y Especialista en Soporte de TI
+      </h2>
 
-  <a href="#proyectos" class="btn">Ver proyectos</a>
+      <p class="hero-sub">
+        Transformo problemas técnicos complejos en soluciones estables, seguras y funcionales,
+        combinando infraestructura, software y experiencia en campo.
+      </p>
+
+      <a href="#proyectos" class="btn">Ver proyectos</a>
+    </div>
+
+    <!-- FOTO -->
+    <div class="hero-photo">
+      <img src="assets/img/carlos.jpeg" alt="Carlos Ordoñez - Desarrollador Web y Soporte TI">
+    </div>
+
+  </div>
 </header>
 
-  <!-- SOBRE MI -->
-<section class="section" id="sobre-mi">
-  <h2>Sobre mí</h2>
 
-  <p class="fade-step">
-    Soy <strong>desarrollador web y especialista en soporte de TI</strong>, con una trayectoria sólida en entornos productivos críticos
-    donde la disponibilidad y estabilidad de los sistemas son fundamentales.
-    Cuento con formación como <strong>técnico en electrónica</strong>, con conocimientos completos en <strong>electricidad</strong>,
-    lo que me permite comprender la tecnología desde su base física hasta las capas de red, servidor y software.
-  </p>
+    <!-- SOBRE MI -->
+    <section class="section" id="sobre-mi">
+      <h2>Sobre mí</h2>
 
-  <p class="fade-step">
-    A lo largo de mi experiencia profesional he trabajado brindando <strong>soporte TI a nivel nacional</strong>,
-    administrando infraestructura tecnológica, servidores, redes, sistemas operativos y aplicaciones empresariales.
-    He participado activamente en <strong>proyectos de implementación tecnológica desde cero</strong>,
-    incluyendo montaje de equipos, configuración de redes estructuradas, instalación de servidores
-    y puesta en producción de sistemas completos.
-  </p>
+      <p class="fade-step">
+        Soy <strong>desarrollador web y especialista en soporte de TI</strong>,
+        con una trayectoria sólida en entornos productivos críticos donde la
+        disponibilidad y estabilidad de los sistemas son fundamentales. Cuento
+        con formación como <strong>técnico en electrónica</strong>, con
+        conocimientos completos en <strong>electricidad</strong>, lo que me
+        permite comprender la tecnología desde su base física hasta las capas de
+        red, servidor y software.
+      </p>
 
-  <p class="fade-step">
-    Tengo experiencia en soporte a <strong>plataformas empresariales</strong>, sistemas administrativos,
-    entornos <strong>Linux y Windows</strong>, redes internas, hardware especializado y operación de sistemas críticos.
-    Este conocimiento me ha permitido desarrollar una <strong>visión integral de la tecnología</strong>,
-    entendiendo cómo interactúan el hardware, la red y el software en escenarios reales.
-  </p>
+      <p class="fade-step">
+        A lo largo de mi experiencia profesional he trabajado brindando
+        <strong>soporte TI a nivel nacional</strong>, administrando
+        infraestructura tecnológica, servidores, redes, sistemas operativos y
+        aplicaciones empresariales. He participado activamente en
+        <strong>proyectos de implementación tecnológica desde cero</strong>,
+        incluyendo montaje de equipos, configuración de redes estructuradas,
+        instalación de servidores y puesta en producción de sistemas completos.
+      </p>
 
-  <p class="fade-step">
-    Paralelamente, he enfocado mis habilidades en el <strong>desarrollo web</strong>,
-    creando aplicaciones funcionales, bien estructuradas y orientadas a resolver problemas reales,
-    aplicando buenas prácticas de desarrollo, lógica clara y enfoque en la estabilidad y mantenibilidad del código.
-  </p>
+      <p class="fade-step">
+        Tengo experiencia en soporte a
+        <strong>plataformas empresariales</strong>, sistemas administrativos,
+        entornos <strong>Linux y Windows</strong>, redes internas, hardware
+        especializado y operación de sistemas críticos. Este conocimiento me ha
+        permitido desarrollar una
+        <strong>visión integral de la tecnología</strong>, entendiendo cómo
+        interactúan el hardware, la red y el software en escenarios reales.
+      </p>
 
-  <p class="fade-step">
-    Me caracterizo por mi <strong>capacidad de análisis</strong>, <strong>resolución rápida de problemas</strong>,
-    pensamiento lógico y adaptación a entornos de alta presión.
-    Disfruto enfrentar desafíos técnicos, optimizar procesos y construir soluciones confiables,
-    combinando experiencia en campo con desarrollo de software.
-  </p>
-</section>
+      <p class="fade-step">
+        Paralelamente, he enfocado mis habilidades en el
+        <strong>desarrollo web</strong>, creando aplicaciones funcionales, bien
+        estructuradas y orientadas a resolver problemas reales, aplicando buenas
+        prácticas de desarrollo, lógica clara y enfoque en la estabilidad y
+        mantenibilidad del código.
+      </p>
 
-  <!-- TECNOLOGÍAS -->
-<section class="section" id="tecnologias">
-  <h2>Tecnologías</h2>
+      <p class="fade-step">
+        Me caracterizo por mi <strong>capacidad de análisis</strong>,
+        <strong>resolución rápida de problemas</strong>, pensamiento lógico y
+        adaptación a entornos de alta presión. Disfruto enfrentar desafíos
+        técnicos, optimizar procesos y construir soluciones confiables,
+        combinando experiencia en campo con desarrollo de software.
+      </p>
+    </section>
 
-  <div class="tech-block">
-    <h3>Desarrollo Web</h3>
-    <div class="tech-grid">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Angular</span>
-      <span>Node.js</span>
-      <span>MySQL</span>
-      <span>Git</span>
-    </div>
-  </div>
+    <!-- TECNOLOGÍAS -->
+    <section class="section" id="tecnologias">
+      <h2>Tecnologías</h2>
 
-  <div class="tech-block">
-    <h3>Soporte de TI</h3>
-    <div class="tech-grid">
-      <span>Windows</span>
-      <span>Linux</span>
-      <span>VPN</span>
-      <span>SAP</span>
-      <span>NP6</span>
-      <span>Redes</span>
-      <span>Soporte Remoto</span>
-      <span>Hardware</span>
-    </div>
-  </div>
+      <div class="tech-block">
+        <h3>Desarrollo Web</h3>
+        <div class="tech-grid">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Angular</span>
+          <span>Node.js</span>
+          <span>MySQL</span>
+          <span>Git</span>
+        </div>
+      </div>
 
-  <div class="tech-block">
-    <h3>Infraestructura y Electrónica</h3>
-    <div class="tech-grid">
-      <span>Servidores</span>
-      <span>Redes Estructuradas</span>
-      <span>Switches</span>
-      <span>Routers</span>
-      <span>Access Points</span>
-      <span>Electricidad</span>
-      <span>Electrónica</span>
-      <span>Fibra Óptica</span>
-    </div>
-  </div>
-</section>
+      <div class="tech-block">
+        <h3>Soporte de TI</h3>
+        <div class="tech-grid">
+          <span>Windows</span>
+          <span>Linux</span>
+          <span>VPN</span>
+          <span>SAP</span>
+          <span>NP6</span>
+          <span>Redes</span>
+          <span>Soporte Remoto</span>
+          <span>Hardware</span>
+        </div>
+      </div>
 
-  <!-- PROYECTOS -->
-  <section class="section" id="proyectos">
-    <h2>Proyectos</h2>
+      <div class="tech-block">
+        <h3>Infraestructura y Electrónica</h3>
+        <div class="tech-grid">
+          <span>Servidores</span>
+          <span>Redes Estructuradas</span>
+          <span>Switches</span>
+          <span>Routers</span>
+          <span>Access Points</span>
+          <span>Electricidad</span>
+          <span>Electrónica</span>
+          <span>Fibra Óptica</span>
+        </div>
+      </div>
+    </section>
 
+    <!-- PROYECTOS -->
+<!-- PROYECTOS -->
+<section class="section" id="proyectos">
+  <h2>Proyectos</h2>
+
+  <div class="projects-grid">
+
+    <!-- Proyecto 1 -->
     <div class="card">
       <h3>Sistema de Gestión de Tickets</h3>
       <p>
-        Aplicación web desarrollada para el registro y seguimiento de incidencias de soporte técnico,
-        con autenticación y control de usuarios.
+        Aplicación web desarrollada para el registro y seguimiento de
+        incidencias de soporte técnico, con autenticación y control de
+        usuarios.
       </p>
+      <p><strong>Tipo:</strong> Aplicación web</p>
       <p><strong>Tecnologías:</strong> React, Node.js, MySQL</p>
-      <a href="#" target="_blank">Ver en GitHub</a>
     </div>
-  </section>
 
-  <!-- EXPERIENCIA -->
-<section class="section" id="experiencia">
-  <h2>Experiencia Profesional</h2>
+    <!-- Proyecto 2 -->
+    <div class="card">
+      <h3>Ecofit Delivery</h3>
+      <p>
+        Aplicación móvil desarrollada en <strong>React Native</strong> enfocada
+        en la entrega de alimentos saludables. Permite a los usuarios explorar
+        menús organizados por tipo de alimentación (Vegano, Diabetes T1/T2,
+        Sin gluten y Fitness), acceder a un menú general, gestionar un carrito
+        de compras y visualizar pedidos, priorizando una experiencia clara y
+        visual.
+      </p>
+      <p><strong>Tipo:</strong> Aplicación móvil Android</p>
+      <p>
+        <strong>Tecnologías:</strong> React Native, JavaScript, Android, UI/UX Mobile
+      </p>
+    </div>
 
-  <!-- IUNGO -->
-  <div class="card">
-    <h3>Operaciones de TI</h3>
-    <p><strong>IUNGO / Controles Gerenciales S.A.</strong></p>
-    <p class="fecha">Junio 2022 – Diciembre 2025</p>
-
-    <ul>
-      <li>
-        Soporte de TI a la operación de <strong>restaurantes McDonald’s a nivel nacional</strong>,
-        brindando atención <strong>remota y presencial</strong> en entornos críticos de alta disponibilidad.
-      </li>
-      <li>
-        Gestión, seguimiento y resolución de incidencias mediante la
-        <strong>plataforma de tickets Aranda</strong>, garantizando tiempos de respuesta eficientes.
-      </li>
-      <li>
-        Soporte, administración y monitoreo del sistema <strong>NP6</strong>,
-        encargado del flujo de órdenes, procesos de cobro y enrutamiento de productos.
-      </li>
-      <li>
-        Soporte técnico a <strong>aplicaciones administrativas y empresariales</strong>,
-        incluyendo <strong>VPN, SAP, SAR, SAR BackOffice y plataformas web corporativas</strong>.
-      </li>
-      <li>
-        Ejecución de <strong>mantenimiento preventivo y correctivo</strong> de equipos de cómputo
-        en oficinas administrativas y restaurantes.
-      </li>
-      <li>
-        Instalación, configuración y mantenimiento de <strong>sistemas operativos, hardware y software</strong>,
-        asegurando estabilidad y continuidad operativa.
-      </li>
-      <li>
-        Configuración e implementación de <strong>servidores, equipos de red y dispositivos de comunicación</strong>.
-      </li>
-      <li>
-        Instalación y mantenimiento de <strong>impresoras, routers, access points y switches</strong>.
-      </li>
-      <li>
-        Responsable de <strong>proyectos de apertura de nuevos restaurantes a nivel nacional</strong>,
-        liderando el área de TI desde cero, incluyendo:
-        <ul>
-          <li>Implementación de infraestructura tecnológica</li>
-          <li>Configuración de redes estructuradas</li>
-          <li>Instalación y administración de servidores</li>
-          <li>Configuración integral de equipos operativos</li>
-        </ul>
-      </li>
-      <li>
-        Coordinación y gestión con <strong>proveedores tecnológicos</strong>,
-        manejo de garantías, adquisición de repuestos y reemplazo de equipos.
-      </li>
-    </ul>
   </div>
-
-  <!-- MEDIOS TV -->
-  <div class="card">
-    <h3>Técnico de Transmisiones y Mantenimiento</h3>
-    <p><strong>Medios TV S.A. de C.V. – Canal La Tribuna</strong></p>
-    <p class="fecha">Agosto 2018 – Junio 2022</p>
-
-    <ul>
-      <li>
-        Soporte de TI y administración de <strong>servidores LiveU (Linux)</strong> y
-        <strong>servidores Dalet</strong>.
-      </li>
-      <li>
-        Supervisión, mantenimiento y optimización de <strong>redes internas</strong>.
-      </li>
-      <li>
-        Responsable de <strong>transmisiones en vivo</strong>, operación de
-        <strong>unidad móvil</strong> y salida al aire del canal.
-      </li>
-      <li>
-        Configuración y mantenimiento de <strong>cámaras SONY</strong> de estudio y campo.
-      </li>
-      <li>
-        Administración, operación y mantenimiento de <strong>equipos de transmisión broadcast</strong>,
-        incluyendo:
-        <ul>
-          <li>Ross Video</li>
-          <li>Dashboard</li>
-          <li>Ultrix</li>
-          <li>XPression</li>
-          <li>Dalet</li>
-        </ul>
-      </li>
-      <li>
-        Operación y soporte técnico en <strong>áreas críticas del canal</strong>, tales como:
-        <ul>
-          <li>Máster</li>
-          <li>Audio</li>
-          <li>Producción</li>
-          <li>Rotulación</li>
-          <li>Colorimetría</li>
-          <li>Ingesta</li>
-          <li>Iluminación</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-  <!-- CABLE COLOR -->
-  <div class="card">
-    <h3>Técnico Asistente Headend</h3>
-    <p><strong>Cable Color</strong></p>
-    <p class="fecha">Mayo 2007 – Marzo 2018</p>
-
-    <ul>
-      <li>
-        Configuración, operación y mantenimiento de equipos de cabecera, incluyendo
-        <strong>Cisco, Harmonic, SSPA, Sapec y Sumavision</strong>.
-      </li>
-      <li>
-        Calibración de <strong>RF</strong> y manejo de <strong>moduladores análogos y digitales</strong>.
-      </li>
-      <li>
-        Ejecución de <strong>mantenimiento general</strong> y reparación de equipos técnicos.
-      </li>
-      <li>
-        Instalación de <strong>circuitos eléctricos</strong> y mantenimiento de
-        <strong>planta eléctrica</strong>.
-      </li>
-      <li>
-        Programación de <strong>pautas publicitarias</strong> y administración de la
-        <strong>grilla de canales</strong>.
-      </li>
-      <li>
-        Edición de <strong>audio y video</strong> para inserción de comerciales.
-      </li>
-      <li>
-        Mantenimiento y administración de <strong>servidores DUET y VideoSwitch</strong>.
-      </li>
-      <li>
-        Gestión de <strong>bases de datos de clientes</strong> para pauta publicitaria.
-      </li>
-      <li>
-        Uso de <strong>herramientas especializadas</strong>:
-        <ul>
-          <li>OTDR</li>
-          <li>Spectrum Analyzer</li>
-          <li>Power Meter</li>
-          <li>ODF</li>
-          <li>Fusionadoras ópticas</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-
 </section>
 
-  <!-- FOOTER -->
-<footer class="footer" id="contacto">
-    <h2>Contacto</h2>
 
-    <div class="footer-icons">
-      <a href="mailto:Carlosord22@Gmail.com"><i class="fas fa-envelope"></i></a>
-<a href="https://wa.me/50432637507" target="_blank">
-  <i class="fab fa-whatsapp"></i></a>
-      <a href="https://github.com/CordzB" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/Carlos-OrdonezBaca" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
+    <!-- EXPERIENCIA -->
+    <section class="section" id="experiencia">
+      <h2>Experiencia Profesional</h2>
 
-    <p class="footer-copy">© 2025 - Carlos Ordoñez | Portafolio Profesional</p>
-  </footer>
+      <!-- IUNGO -->
+      <div class="card">
+        <h3>Operaciones de TI</h3>
+        <p><strong>IUNGO / Controles Gerenciales S.A.</strong></p>
+        <p class="fecha">Junio 2022 – Diciembre 2025</p>
 
-  <!-- JS -->
-  <script src="js/main.js"></script>
-</body>
+        <ul>
+          <li>
+            Soporte de TI a la operación de
+            <strong>restaurantes McDonald’s a nivel nacional</strong>, brindando
+            atención <strong>remota y presencial</strong> en entornos críticos
+            de alta disponibilidad.
+          </li>
+          <li>
+            Gestión, seguimiento y resolución de incidencias mediante la
+            <strong>plataforma de tickets Aranda</strong>, garantizando tiempos
+            de respuesta eficientes.
+          </li>
+          <li>
+            Soporte, administración y monitoreo del sistema
+            <strong>NP6</strong>, encargado del flujo de órdenes, procesos de
+            cobro y enrutamiento de productos.
+          </li>
+          <li>
+            Soporte técnico a
+            <strong>aplicaciones administrativas y empresariales</strong>,
+            incluyendo
+            <strong
+              >VPN, SAP, SAR, SAR BackOffice y plataformas web
+              corporativas</strong
+            >.
+          </li>
+          <li>
+            Ejecución de
+            <strong>mantenimiento preventivo y correctivo</strong> de equipos de
+            cómputo en oficinas administrativas y restaurantes.
+          </li>
+          <li>
+            Instalación, configuración y mantenimiento de
+            <strong>sistemas operativos, hardware y software</strong>,
+            asegurando estabilidad y continuidad operativa.
+          </li>
+          <li>
+            Configuración e implementación de
+            <strong
+              >servidores, equipos de red y dispositivos de comunicación</strong
+            >.
+          </li>
+          <li>
+            Instalación y mantenimiento de
+            <strong>impresoras, routers, access points y switches</strong>.
+          </li>
+          <li>
+            Responsable de
+            <strong
+              >proyectos de apertura de nuevos restaurantes a nivel
+              nacional</strong
+            >, liderando el área de TI desde cero, incluyendo:
+            <ul>
+              <li>Implementación de infraestructura tecnológica</li>
+              <li>Configuración de redes estructuradas</li>
+              <li>Instalación y administración de servidores</li>
+              <li>Configuración integral de equipos operativos</li>
+            </ul>
+          </li>
+          <li>
+            Coordinación y gestión con
+            <strong>proveedores tecnológicos</strong>, manejo de garantías,
+            adquisición de repuestos y reemplazo de equipos.
+          </li>
+        </ul>
+      </div>
+
+      <!-- MEDIOS TV -->
+      <div class="card">
+        <h3>Técnico de Transmisiones y Mantenimiento</h3>
+        <p><strong>Medios TV S.A. de C.V. – Canal La Tribuna</strong></p>
+        <p class="fecha">Agosto 2018 – Junio 2022</p>
+
+        <ul>
+          <li>
+            Soporte de TI y administración de
+            <strong>servidores LiveU (Linux)</strong> y
+            <strong>servidores Dalet</strong>.
+          </li>
+          <li>
+            Supervisión, mantenimiento y optimización de
+            <strong>redes internas</strong>.
+          </li>
+          <li>
+            Responsable de <strong>transmisiones en vivo</strong>, operación de
+            <strong>unidad móvil</strong> y salida al aire del canal.
+          </li>
+          <li>
+            Configuración y mantenimiento de <strong>cámaras SONY</strong> de
+            estudio y campo.
+          </li>
+          <li>
+            Administración, operación y mantenimiento de
+            <strong>equipos de transmisión broadcast</strong>, incluyendo:
+            <ul>
+              <li>Ross Video</li>
+              <li>Dashboard</li>
+              <li>Ultrix</li>
+              <li>XPression</li>
+              <li>Dalet</li>
+            </ul>
+          </li>
+          <li>
+            Operación y soporte técnico en
+            <strong>áreas críticas del canal</strong>, tales como:
+            <ul>
+              <li>Máster</li>
+              <li>Audio</li>
+              <li>Producción</li>
+              <li>Rotulación</li>
+              <li>Colorimetría</li>
+              <li>Ingesta</li>
+              <li>Iluminación</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CABLE COLOR -->
+      <div class="card">
+        <h3>Técnico Asistente Headend</h3>
+        <p><strong>Cable Color</strong></p>
+        <p class="fecha">Mayo 2007 – Marzo 2018</p>
+
+        <ul>
+          <li>
+            Configuración, operación y mantenimiento de equipos de cabecera,
+            incluyendo
+            <strong>Cisco, Harmonic, SSPA, Sapec y Sumavision</strong>.
+          </li>
+          <li>
+            Calibración de <strong>RF</strong> y manejo de
+            <strong>moduladores análogos y digitales</strong>.
+          </li>
+          <li>
+            Ejecución de <strong>mantenimiento general</strong> y reparación de
+            equipos técnicos.
+          </li>
+          <li>
+            Instalación de <strong>circuitos eléctricos</strong> y mantenimiento
+            de <strong>planta eléctrica</strong>.
+          </li>
+          <li>
+            Programación de <strong>pautas publicitarias</strong> y
+            administración de la <strong>grilla de canales</strong>.
+          </li>
+          <li>
+            Edición de <strong>audio y video</strong> para inserción de
+            comerciales.
+          </li>
+          <li>
+            Mantenimiento y administración de
+            <strong>servidores DUET y VideoSwitch</strong>.
+          </li>
+          <li>
+            Gestión de <strong>bases de datos de clientes</strong> para pauta
+            publicitaria.
+          </li>
+          <li>
+            Uso de <strong>herramientas especializadas</strong>:
+            <ul>
+              <li>OTDR</li>
+              <li>Spectrum Analyzer</li>
+              <li>Power Meter</li>
+              <li>ODF</li>
+              <li>Fusionadoras ópticas</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto">
+      <h2>Contacto</h2>
+
+      <div class="footer-icons">
+        <a href="mailto:Carlosord22@Gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="https://wa.me/50432637507" target="_blank">
+          <i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="https://github.com/CordzB" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://linkedin.com/in/Carlos-OrdonezBaca" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+
+      <p class="footer-copy">
+        © 2025 - Carlos Ordoñez | Portafolio Profesional
+      </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
