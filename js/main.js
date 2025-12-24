@@ -85,3 +85,42 @@ function animate() {
 }
 
 animate();
+/* FOOTER ICONOS – ANIMACIÓN AL SCROLL */
+const scrollElements = document.querySelectorAll('.scroll-animate');
+
+const scrollObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        scrollObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+scrollElements.forEach(el => scrollObserver.observe(el));
+/* =====================================================
+   ANIMACIÓN GLOBAL AL SCROLL
+   ===================================================== */
+
+const animatedElements = document.querySelectorAll(
+  '.animate, .card, .tech-grid span, footer'
+);
+
+const globalObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('show');
+        }, index * 80);
+        globalObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+animatedElements.forEach(el => globalObserver.observe(el));
